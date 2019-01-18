@@ -1,8 +1,9 @@
 <template>
-  <div id="wraper">
-    <maps map-type="baidu"/>
+  <div class="gaode">
+    <maps map-type="gaode" />
   </div>
 </template>
+
 
 <script>
 // @ is an alias to /src

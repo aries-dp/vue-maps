@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/">百度地图</router-link> |
+      <router-link to="/gaode">高德地图</router-link>
     </div>
     <router-view/>
   </div>
@@ -15,6 +15,8 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  width: 100%;
+  height: 100%;
 }
 #nav {
   padding: 30px;
