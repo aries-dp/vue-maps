@@ -34,7 +34,7 @@ export default {
       default: '450px'
     }
   },
-  data: {
+  data() {
     return {
        map: null
     }
@@ -85,7 +85,7 @@ export default {
       default: '450px'
     }
   },
-  data: {
+  data() {
     return {
        map: null
     }
