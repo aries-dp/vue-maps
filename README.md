@@ -1,29 +1,4 @@
 # 异步加载百度地图或高德地图
 
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
-
-### Compiles and minifies for production
-```
-yarn run build
-```
-
-### Run your tests
-```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### md 语法
+<p align="left"><a href="https://github.com/younghz/Markdown" target="_blank" rel="noopener noreferrer"><img width="100" src="https://github.com/Hero-ChiJay/JavaScript--Hodgepodge/blob/master/images/md.png" alt="md logo"></a></p>
