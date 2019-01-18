@@ -9,6 +9,20 @@ yarn
 yarn serve
 
 ```
+### 使用utils目录下的异步加载地图asyncLoadMapApi.js 
+
+  #### 高德地图下无需传递 hasCallback 参数
+
+  ```javascript
+    MapApi.loadApi(`http://api.map.baidu.com/api?v=3.0&ak=${gaodeMapKey}`)
+  ```
+
+  #### 百度地图下需传递 hasCallback 参数
+
+  ```javascript
+    MapApi.loadApi(`http://api.map.baidu.com/api?v=3.0&ak=${baiduMapKey}`, true)
+  ```
+  #### 都需要在mounted 钩子使用, 地图组件需要contianer dom下加载地图，（mounted钩子下存在dom）
 ### 注意
 在utils文件夹中keys.js需要申请高德地图或百度地图对应的公钥
 
