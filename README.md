@@ -42,7 +42,6 @@ export default {
   async mounted() {
     if (!window.AMap) {
       await MapApi.loadApi(`http://webapi.amap.com/maps?v=1.4.8&key=${gaodeMapKey}`)
-      
     }
     this.initAMap()
   },
@@ -93,7 +92,7 @@ export default {
   async mounted() {
    
     if (!window.BMap) {
-      await MapApi.loadApi(`http://webapi.amap.com/maps?v=1.4.8&key=${gaodeMapKey}`, true)
+      await MapApi.loadApi(`http://webapi.amap.com/maps?v=1.4.8&key=${baiduMapKey}`, true)
     }
     window.____callback____ = this.initBMap()
   },
