@@ -2,7 +2,12 @@
 
 # 运行项目
 ```shell
-git clone
+git clone https://github.com/aries-dp/vue-maps.git
+
+cd vue-maps
+yarn 
+yarn serve
+
 ```
 
 ### 效果图
