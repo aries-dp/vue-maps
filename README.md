@@ -51,7 +51,7 @@ export default {
     initAMap() {
       let [defalutLng, defaultLat, zoom] = [121.621627, 38.918699, 11] //默认为大连市的经纬度
 
-      this.map  = new window.AMap.Map('maps', {
+      this.map = new window.AMap.Map('maps', {
         zoom: zoom,//级别
         center: [defalutLng, defaultLat],//中心点坐标
         viewMode:'3D'//使用3D视图
@@ -74,7 +74,7 @@ import MapApi from '@/utils/asyncLoadMapApi'
 import { baiduMapKey } from '@/utils/keys'
 
 export default {
-  name: 'home',
+  name: 'map',
   props: {
     width: {
       type: String,
@@ -94,9 +94,8 @@ export default {
    
     if (!window.BMap) {
       await MapApi.loadApi(`http://webapi.amap.com/maps?v=1.4.8&key=${gaodeMapKey}`, true)
-      
     }
-     window.____callback____ = this.initBMap()
+    window.____callback____ = this.initBMap()
   },
   methods: {
     initBMap() {
