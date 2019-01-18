@@ -23,6 +23,11 @@ export default {
       default: 'baidu'
     }
   },
+  data() {
+    return {
+      map: null
+    }
+  },
   async mounted() {
     if (this.mapType === 'baidu' && !window.BMap) {
       await MapApi.loadApi(`http://api.map.baidu.com/api?v=3.0&ak=${baiduMapKey}`, true)
