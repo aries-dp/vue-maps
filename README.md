@@ -13,10 +13,9 @@ yarn serve
 
   高德地图下无需传递 hasCallback 参数
 
-  ```vue
- <template>
-  <div id="maps" :style="{width, height}">
-  </div>
+```vue
+<template>
+  <div id="maps" :style="{width, height}"></div>
 </template>
 
 <script>
@@ -61,7 +60,7 @@ export default {
   }
 }
 </script>
-  ```
+```
 
   百度地图下需传递 hasCallback 参数 来接收百度地图的callback
 
@@ -114,7 +113,7 @@ export default {
 }
 </script>
 ```
-  都需要在mounted 钩子使用, 地图组件需要contianer dom下加载地图，（mounted钩子下存在dom）
+  都需要在mounted 钩子使用, 地图组件需要dom下加载地图，（mounted钩子下存在dom）
 ### 注意
 在utils文件夹中keys.js需要申请高德地图或百度地图对应的公钥
 
