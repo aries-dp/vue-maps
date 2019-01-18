@@ -65,13 +65,10 @@ export default {
 
   百度地图下需传递 hasCallback 参数 来接收百度地图的callback
 
-  ```vue
- <template>
-  <div id="maps" :style="{width, height}">
-
-  </div>
+```vue
+<template>
+  <div id="maps" :style="{width, height}"></div>
 </template>
-
 <script>
 // @ is an alias to /src
 import MapApi from '@/utils/asyncLoadMapApi'
@@ -96,14 +93,12 @@ export default {
   }
   async mounted() {
    
-    if (!window.AMap) {
-      await MapApi.loadApi(`http://webapi.amap.com/maps?v=1.4.8&key=${gaodeMapKey}`)
+    if (!window.BMap) {
+      await MapApi.loadApi(`http://webapi.amap.com/maps?v=1.4.8&key=${gaodeMapKey}`, true)
       
     }
      window.____callback____ = this.initBMap()
-   
   },
-
   methods: {
     initBMap() {
       let [defalutLng, defaultLat, zoom] = [121.621627, 38.918699, 9] //默认为大连市的经纬度
@@ -118,8 +113,7 @@ export default {
   }
 }
 </script>
-    
-  ```
+```
   都需要在mounted 钩子使用, 地图组件需要contianer dom下加载地图，（mounted钩子下存在dom）
 ### 注意
 在utils文件夹中keys.js需要申请高德地图或百度地图对应的公钥
